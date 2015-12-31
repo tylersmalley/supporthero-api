@@ -54,7 +54,11 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  match '*all' => 'api#cors', via: :options
+
   namespace :api, defaults: { format: :json } do
-    resource :session, only: [:create, :destroy, :show]
+    resource :session, only: %i(create destroy show)
+
+    resources :schedules, only: %i(destroy index update)
   end
 end

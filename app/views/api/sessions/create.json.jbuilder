@@ -2,5 +2,5 @@ json.user do
   json.(@user, :id, :name)
 end
 
-json.access_token @session.access_token
+json.(@session, :access_token, :expires_in, :expires_at)
 json.token_type "bearer"

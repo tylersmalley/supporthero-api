@@ -1,17 +1,14 @@
 class Api::SessionsController < ApiController
-  protect_from_forgery with: :null_session
-
-  before_filter :authenticate, only: [:show]
+  before_filter :authenticate, only: %i(show)
 
   def create
     @user = User.find_by(name: params[:name])
 
     if !@user.try(:authenticate, params[:password])
-      @error = { message: 'Invalid credentials' }
-      render 'api/error', status: :unauthorized
+      return render_error 'Invalid credentials', :unauthorized
     end
 
-    @session = Session.new user_id: @user.id
+    @session = Session.new(user_id: @user.id)
   end
 
   def show

@@ -1,7 +1,109 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  name: MyString
-
-two:
-  name: MyString
+---
+Sherry:
+  id: 1
+  name: Sherry
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$9Z92aLcK6Bo/1mcMlU0Z2OFyMrULUYIiqEBbirqk7jRyysXCYTPfG"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$9Z92aLcK6Bo/1mcMlU0Z2O"
+    checksum: FyMrULUYIiqEBbirqk7jRyysXCYTPfG
+Boris:
+  id: 2
+  name: Boris
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$IVPVo0fu.PnB8tKoKMUEYu02c9o7EqUrou3WR.g.rM1mshGrpGSYy"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$IVPVo0fu.PnB8tKoKMUEYu"
+    checksum: 02c9o7EqUrou3WR.g.rM1mshGrpGSYy
+Vicente:
+  id: 3
+  name: Vicente
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$Sm.Pszsei.CEj9D9slUaieGDOIVi2ouKiL/dHk3maCExYyMOIXqKO"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$Sm.Pszsei.CEj9D9slUaie"
+    checksum: GDOIVi2ouKiL/dHk3maCExYyMOIXqKO
+Matte:
+  id: 4
+  name: Matte
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$ogzp6LQgRLLec0jqJs4v6OYZ48E9w2tXeemypXPJW8hWBVWZPaC3C"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$ogzp6LQgRLLec0jqJs4v6O"
+    checksum: YZ48E9w2tXeemypXPJW8hWBVWZPaC3C
+Jack:
+  id: 5
+  name: Jack
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$7oXBRqKgW4pKAbNp7Uh.6ubuLY4Xf6fVB6qwF5ljwPeuS/bJhZ1xK"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$7oXBRqKgW4pKAbNp7Uh.6u"
+    checksum: buLY4Xf6fVB6qwF5ljwPeuS/bJhZ1xK
+Kevin:
+  id: 6
+  name: Kevin
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$BFqCzjJdP5v7xPS2gnF/HuCTbrhugWwChxU8/BzJZMB9u9ZEB39.."
+    version: 2a
+    cost: 4
+    salt: "$2a$04$BFqCzjJdP5v7xPS2gnF/Hu"
+    checksum: CTbrhugWwChxU8/BzJZMB9u9ZEB39..
+Zoe:
+  id: 7
+  name: Zoe
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$s9h3Sa4s36TczC2n111qoukvvv.yQbhnsBaHmE8VmyVj42ZdEa.NW"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$s9h3Sa4s36TczC2n111qou"
+    checksum: kvvv.yQbhnsBaHmE8VmyVj42ZdEa.NW
+Jay:
+  id: 8
+  name: Jay
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$V/bKSRrA1tQGDW8nKn75UuC6bMwOa4cstUzwtZ60dPBemg6BSYtxm"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$V/bKSRrA1tQGDW8nKn75Uu"
+    checksum: C6bMwOa4cstUzwtZ60dPBemg6BSYtxm
+Eadon:
+  id: 9
+  name: Eadon
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$9hhMM2ghgeuMvpPdsk5ldOK4vBlHNvVqZMNDH/r5tfKj1lGnhSDSa"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$9hhMM2ghgeuMvpPdsk5ldO"
+    checksum: K4vBlHNvVqZMNDH/r5tfKj1lGnhSDSa
+Franky:
+  id: 10
+  name: Franky
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$lz2qJO5iPkwkeyT46vwIUOHstWoqcl93W1AmkR4NL1bQFxs0Ya7.O"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$lz2qJO5iPkwkeyT46vwIUO"
+    checksum: HstWoqcl93W1AmkR4NL1bQFxs0Ya7.O
+Luis:
+  id: 11
+  name: Luis
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$TIgjoFlo6Sdt70kdej0f0u.J8Uu9lwEHXXaSxDj9n4TFHXA8ZK.PK"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$TIgjoFlo6Sdt70kdej0f0u"
+    checksum: ".J8Uu9lwEHXXaSxDj9n4TFHXA8ZK.PK"
+James:
+  id: 12
+  name: James
+  password_digest: !ruby/string:BCrypt::Password
+    str: "$2a$04$yoZD.gHLjISSSAD.F4exWue21tUJnV3.knJKq70CBh6m7U9/cTjkm"
+    version: 2a
+    cost: 4
+    salt: "$2a$04$yoZD.gHLjISSSAD.F4exWu"
+    checksum: e21tUJnV3.knJKq70CBh6m7U9/cTjkm

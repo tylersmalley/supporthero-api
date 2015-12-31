@@ -1,1 +1,1 @@
-json.(@error, :message)
+json.(@error, :error)
